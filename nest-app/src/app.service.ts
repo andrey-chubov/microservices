@@ -11,9 +11,8 @@ export class AppService {
   }
 
   async publishEvent() {
-    this.client.emit('book-created', {
-      bookName: 'The Way Of Kings',
-      author: 'Brandon Sanderson',
+    this.client.emit('event', {
+      message: 'event',
     });
   }
 }

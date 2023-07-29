@@ -8,8 +8,8 @@ export class AppController {
     return `Hello ${name}`;
   }
 
-  @EventPattern('book-created')
-  async handleBookCreatedEvent(data: Record<string, unknown>) {
+  @EventPattern('event')
+  async handleCreatedEvent(data: Record<string, unknown>) {
     console.log(data);
   }
 }
